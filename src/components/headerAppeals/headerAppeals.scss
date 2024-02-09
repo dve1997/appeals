@@ -1,0 +1,60 @@
+.appeals {
+  &__box {
+    padding: 10px;
+    background: linear-gradient(
+      0deg,
+      rgba(195, 195, 195, 1) 0%,
+      rgba(253, 187, 45, 1) 100%
+    );
+    box-shadow: 2px 2px 2px black;
+  }
+
+  &__loyut-header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  &__logo {
+    grid-column: 1/2;
+
+    & > img {
+      width: 45px;
+    }
+  }
+
+  &__links {
+    grid-column: 9/13;
+
+    & > span {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+  &__link {
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:hover {
+      font-weight: 900;
+      text-decoration: none;
+    }
+  }
+
+  &__link-active {
+    text-decoration: underline;
+  }
+}
+
+.anim-enter {
+  opacity: 0;
+}
+.anim-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms;
+}

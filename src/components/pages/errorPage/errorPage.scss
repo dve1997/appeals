@@ -1,0 +1,25 @@
+.goods {
+  &__error {
+    grid-column: 1/13;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+
+    & h3 {
+      margin-bottom: 15px;
+    }
+
+    & img {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.anim-enter {
+  opacity: 0;
+}
+.anim-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms;
+}
